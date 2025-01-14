@@ -40,7 +40,7 @@ function createRow(student, index) {
 }
 
 // Add Student
-form.addEventListener("submit", (e) => {
+form.addEventListener("submit", (e) => {                                                      //submit action for form and taking inputs 
   e.preventDefault();
   const name = document.getElementById("student-name").value;
   const id = document.getElementById("student-id").value;
@@ -52,9 +52,9 @@ form.addEventListener("submit", (e) => {
     return;
   }
 
-  const student = { name, id, email, contact };
-  students.push(student);
-  localStorage.setItem("students", JSON.stringify(students));
+  const student = { name, id, email, contact };                                               //creating object for data 
+  students.push(student);                                                                     //pushing data into array 
+  localStorage.setItem("students", JSON.stringify(students));                                 //storing array data in the local storage 
 
   createRow(student, students.length - 1);
   form.reset();

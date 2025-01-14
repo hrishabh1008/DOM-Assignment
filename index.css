@@ -19,11 +19,25 @@ body {
   header h1 {
     margin: 0;
   }
+
+
+  #register{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+
+  @media only screen and (max-width: 768px) {
+    #register {
+      display: flex;
+      flex-direction: column;
+    }
+  }
   
   /* Form Section */
   #form-section {
     margin: 2rem auto;
-    padding: 1rem;
+    padding: 5rem;
     max-width: 600px;
     background: #fff;
     border-radius: 5px;
