@@ -49,13 +49,13 @@ To run the examples and assignments, open the `index.html` file in your web brow
 
 The project structure is organized as follows:
 
-DOM-Assignment/
-├── css/
-│ ├── styles.css
-├── js/
-│ ├── script.js
-├── index.html
-├── README.md
+DOM-Assignment/  
+├── css/  
+│ ├── styles.css  
+├── js/  
+│ ├── script.js  
+├── index.html  
+├── README.md  
 
 
 
